@@ -15,6 +15,9 @@ app.use("/api/v1/user",userRouter);
 app.use("/api/v1/plan",planRouter);
 //update profile
 //delete profile
+app.use(function(req,res){
+    res.send("<h1>Backend API</h1>")
+})
 
 //server starting
 app.listen(3000, function () {
