@@ -19,7 +19,8 @@ app.use(function(req,res){
     res.send("<h1>Backend API</h1>")
 })
 
+const port=process.env.PORT||3000;
 //server starting
-app.listen(3000, function () {
+app.listen(port, function () {
     console.log("Server started at 3000");
 });

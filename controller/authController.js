@@ -1,6 +1,6 @@
 const FooduserModel = require("../model/usermodel");
 //jsonweb token
-const secrets=require("../secrets");
+const secrets=process.env||require("../secrets");
 const jwt = require("jsonwebtoken");
 const mailSender=require("../utility/mailSender");
 //////////functions///////

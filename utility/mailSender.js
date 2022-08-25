@@ -1,5 +1,5 @@
 const nodemailer = require("nodemailer");
-const secrets=require("../secrets");
+const secrets=process.env||require("../secrets");
 //mail sender
 async function mailSender(user) {
 
