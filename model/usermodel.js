@@ -1,7 +1,6 @@
 const mongoose=require("mongoose");
 
-let secrets=require("../secrets")
-let dblink=process.env.DB_LINK||secrets.DB_LINK;
+let dblink=process.env.DB_LINK||require("../secrets").DB_LINK;
 //app connection to database
 mongoose.connect(dblink).then(function(){
     console.log("connected");
